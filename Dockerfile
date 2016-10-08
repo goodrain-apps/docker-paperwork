@@ -1,8 +1,8 @@
 FROM ubuntu:14.04
 MAINTAINER lucienchu<lucienchu@hotmail.com>
 
-RUN sed -Ei '1,$s/http:\/\/archive.ubuntu.com\/ubuntu\//http:\/\/cn.archive.ubuntu.com\/ubuntu\//g' /etc/apt/sources.list \
-    && apt-get update -q \
+#RUN sed -Ei '1,$s/http:\/\/archive.ubuntu.com\/ubuntu\//http:\/\/cn.archive.ubuntu.com\/ubuntu\//g' /etc/apt/sources.list \
+RUN apt-get update -q \
     && apt-get upgrade -y \
     && apt-get install -y php5-mysql \
                           nginx \
