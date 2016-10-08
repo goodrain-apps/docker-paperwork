@@ -1,0 +1,1 @@
+* */1 * * * www-data cp -R cp -R /var/www/paperwork/frontend/app/storage /data/

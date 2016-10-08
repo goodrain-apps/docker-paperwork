@@ -1,0 +1,8 @@
+{
+    "driver": "mysql",
+    "database": "paperwork",
+    "host": "{MYSQL_HOST}",
+    "username": "{MYSQL_USER}",
+    "password": "{MYSQL_PASS}",
+    "port": {MYSQL_PORT}
+}
