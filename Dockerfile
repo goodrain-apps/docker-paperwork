@@ -50,6 +50,6 @@ COPY crontab /etc/cron.d/
 RUN rm -f /etc/nginx/sites-enabled/default \
     && ln -s /etc/nginx/sites-available/paperwork.conf /etc/nginx/sites-enabled/
 
-
+EXPOSE 5000
 
 ENTRYPOINT ["docker-entrypoint.sh"]
