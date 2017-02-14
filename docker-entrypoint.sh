@@ -88,6 +88,13 @@ service nginx start
 service php5-fpm restart
 cp -R /var/www/paperwork/frontend/app/storage /data/
 
+
+# qjuery cdn source update
+sed -i \
+    -e "s|ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js|cdn.bootcss.com/jquery/1.11.3/jquery.min.js|" \
+    /var/www/paperwork/frontend/public/setup.php
+
+
 if [[ $1 == "bash" ]]; then
     /bin/bash
 else
